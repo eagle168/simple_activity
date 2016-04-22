@@ -10,7 +10,9 @@ module SimpleActivity
 
     serialize :cache
 
-    default_scope order('created_at DESC')
+    default_scope {
+      order('created_at DESC')
+    }
 
     # Show activities belongs to an actor
     def self.actor_activities(obj)

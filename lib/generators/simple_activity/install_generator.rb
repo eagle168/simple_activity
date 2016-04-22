@@ -16,7 +16,7 @@ module SimpleActivity
       end
 
       def create_migration_file
-        migration_template "create_activity.rb", "db/migrate/create_activity.rb"
+        migration_template "create_simple_activity.rb", "db/migrate/create_simple_activity.rb"
       end
 
       def copy_rules
@@ -24,7 +24,7 @@ module SimpleActivity
       end
 
       def copy_activity_model
-        copy_file "activity.rb", "app/models/activity.rb"
+        copy_file "activity.rb", "app/models/activity/activity.rb"
       end
     end
   end

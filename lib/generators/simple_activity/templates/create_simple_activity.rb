@@ -1,4 +1,4 @@
-class CreateActivity < ActiveRecord::Migration
+class CreateSimpleActivity < ActiveRecord::Migration
   def change
     create_table :simple_activity_activities do |t|
       t.string  :actor_type
