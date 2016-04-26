@@ -24,7 +24,7 @@ module SimpleActivity
       end
 
       def copy_activity_model
-        copy_file "activity.rb", "app/models/activity/activity.rb"
+        copy_file "simple_activity_activity.rb", "app/models/activity/simple_activity_activity.rb"
       end
     end
   end
