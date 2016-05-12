@@ -46,7 +46,7 @@ module SimpleActivity
     #        automatically
     private
     def record_activity(target=nil)
-      unless controller_path.match SimpleActivity.filtered_controllers
+      unless controller_name.match SimpleActivity.filtered_controllers
         process_activity(target)
       end
     end
